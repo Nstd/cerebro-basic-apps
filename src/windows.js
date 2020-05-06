@@ -1,6 +1,7 @@
 import path from 'path'
 import getAbbr from './getAbbr'
 import { shell } from 'electron'
+import pinyin from 'tiny-pinyin'
 
 const { APPDATA, ProgramData, USERPROFILE } = process.env
 
@@ -32,7 +33,15 @@ export const EXTENSIONS = ['lnk', 'exe']
 
 export const openApp = (app) => shell.openItem(app.source)
 
-export const toString = (app) => `${app.name} ${app.filename} ${getAbbr(app.name)}`
+export const toString = (app) => {
+	if(pinyin.isSupported()) {
+		console.log(`support ${app.name} ${app.filename} ${getAbbr(app.name)} ${pinyin.convertToPinyin(app.name).replace(/ /g, '')}`)
+		return `${app.name} ${app.filename} ${getAbbr(app.name)} ${pinyin.convertToPinyin(app.name).replace(/ /g, '')}` 
+	} else {
+		console.log(`not ${app.name} ${app.filename} ${getAbbr(app.name)}`)
+		return `${app.name} ${app.filename} ${getAbbr(app.name)}`
+	}
+}
 
 export const formatPath = (filePath) => ({
   ...parseFile(filePath),

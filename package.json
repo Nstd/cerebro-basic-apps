@@ -1,9 +1,9 @@
 {
-  "name": "cerebro-basic-apps",
+  "name": "cerebro-basic-apps-chinese-abbr",
   "version": "1.0.12",
-  "description": "Basic plugin for search and launch applications  with Cerebro app",
+  "description": "Basic plugin for search and launch applications  with Cerebro app (enable Chinese pinyin)",
   "license": "MIT",
-  "repository": "KELiON/cerebro-basic-apps",
+  "repository": "Nstd/cerebro-basic-apps",
   "author": {
     "name": "Alexandr Subbotin",
     "email": "kelionweb@gmail.com",
@@ -28,11 +28,13 @@
   ],
   "devDependencies": {
     "cerebro-scripts": "^0.0.25",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
     "cerebro-tools": "^0.1.0",
     "cerebro-ui": "^0.0.16",
-    "du": "^1.0.0"
+    "du": "^1.0.0",
+    "tiny-pinyin": "^1.3.0"
   }
 }
