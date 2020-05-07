@@ -2,7 +2,7 @@
 
 > Basic plugin for search and launch applications  with [Cerebro app](http://www.cerebroapp.com)
 
-** windows下搜索应用程序的时候，支持拼音 **
+**windows下搜索应用程序的时候，支持拼音**
 
 Note: on MacOS preferred plugin is `cerebro-mac-apps`.
 

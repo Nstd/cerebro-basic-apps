@@ -1,7 +1,7 @@
 {
   "name": "cerebro-basic-apps-chinese-abbr",
-  "version": "1.0.13",
-  "description": "Basic plugin for search and launch applications  with Cerebro app (enable Chinese pinyin)",
+  "version": "1.0.15",
+  "description": "Basic plugin for search and launch applications  with Cerebro app (support Chinese pinyin)",
   "license": "MIT",
   "repository": "Nstd/cerebro-basic-apps",
   "author": {
