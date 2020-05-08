@@ -36,6 +36,8 @@ class FileDetails extends Component {
           <dd>{ctime && new Date(ctime).toLocaleString()}</dd>
           {!skipSize && <dt>Size:</dt>}
           {!skipSize && <dd>{size && bytesToSize(size)}</dd>}
+		  <dt>Path:</dt>
+		  <dd>{path}</dd>
         </dl>
       </div>
     )
